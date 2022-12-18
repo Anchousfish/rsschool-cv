@@ -1,7 +1,115 @@
-html, body {
-    font-family: Arial, serif;
-    font-size: 16px;
-    margin: 0;
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url("assets/fonts/LibreBaskerville-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url("assets/fonts/LibreBaskerville-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url("assets/fonts/LibreBaskerville-Italic.ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'LibreBaskerville';
+    min-height: 100vh;
     padding: 0;
-    background-color: aquamarine;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: floralwhite;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    border: 1px black dashed;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto                                                                                                  ;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.item-link{
+    font-style: italic;
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: darkslategrey;
+    transition: .3s;    
+}
+.item-link:hover{
+color: goldenrod;
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-section{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.foto{
+    width: 150px;
+    height: 200px;
+}
+.section{
+width: 50%;
+}
+.section-title{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color:  darkcyan;
+}
+
+.text-link{
+    text-decoration: none;
+    color: rgb(21, 164, 164);
+    font-weight: 700;
+    transition: .2s;
+}
+.text-link:hover{
+    color: gold;
+    
+}
+.text-list{
+list-style: square;
+color: rgb(122, 172, 36);
+}
+.text-item{
+    color:darkgreen
 }

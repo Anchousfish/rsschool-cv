@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5. Base template for any project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/svg/favicon.ico">
+  
 </head>
 <body>
- </body>
+ <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="item-link"> Contact Info</a></li>
+          <li class="nav-item"><a href="#about" class="item-link">About me</a></li>
+          <li class="nav-item"><a href="#skills" class="item-link">Skills and Proficiency</a></li>
+          <li class="nav-item"><a href="#courses" class="item-link">Courses</a></li>
+          <li class="nav-item"><a href="#lang" class="item-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+ </header>
+ <main class="main">
+  <div class="main-container">
+    <section class="profile-section" id="profile">
+      <img class="foto" alt="my foto" src="assets/img/foto.jpg">     
+    </section>
+    <section class="section" id="profile">
+      <h1 class="section-title">Hanna Varavva</h1>
+      <p class="text-item"> Trainee Full-Stack Developer</p>
+    </section>
+    <section class="section" id="about">
+      <h2 class="section-title">About me</h2>
+      <p class="text-item">I'm about to learn bright side of the moon, just to see what the frontend is</p>
+    </section>
+    <section class="section" id="contacts">
+      <h2 class="section-title">Contact Info</h2>
+     <ul class="text-list">
+      <li class="text-item">Phone: +375447322519</li>
+      <li class="text-item">Email: hanna.varavva@gmail.com</li>
+      <li class="text-item">Telegram: @HannaVaravva</li>
+      <li class="text-item"><a class="text-link" title="My LinkedIn profile" href="https://www.linkedin.com/in/hanna-v" target="_blank">LinkedIn</a></li>
+     </ul>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills and Proficiency</h2>
+      <ul class="text-list">
+        <li class="text-item"> Go Basics</li>
+        <li class="text-item">Docker Basics</li>
+        <li class="text-item">Git, Github</li>
+        <li class="text-item">VS Code</li>
+      </ul>
+    </section>
+    <section class="section" id="courses">
+      <h2 class="section-title">Courses</h2>
+      <ul class="text-list">
+        <li class="text-item">
+          Becoming a gopher with GOLANG UNITED
+          <ul class="text-list">
+            <li class="text-item">Theoretical part: completed</li>
+            <li class="text-item">Practical part: continues</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="section" id="lang">
+      <h2 class="section-title">Languages</h2>
+      <ul class="text-list">
+        <li class="text-item">English - Intermediate</li>
+        <li class="text-item">Russian - Native</li>
+        <li class="text-item">Ukranian - Basic</li>
+      </ul>
+    </section>
+  </div>
+ </main>
+ <footer class="footer">
+  <div class="container">
+    <ul class="footer-list">
+      <li class="footer-item">2022</li>
+      <li class="footer-item"><a class="footer-link" href="http://github.com/Anchousfish" target="_blank">Anchousfish</a></li>
+      <li class="footer-item"><img alt="rs logo" src="assets/img/rs-logo.png"></li>
+    </ul>
+  </div>
+ </footer>
+</body>
 </html>
