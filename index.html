@@ -18,6 +18,7 @@
           <li class="nav-item"><a href="#about" class="item-link">About me</a></li>
           <li class="nav-item"><a href="#skills" class="item-link">Skills and Proficiency</a></li>
           <li class="nav-item"><a href="#courses" class="item-link">Courses</a></li>
+          <li class="nav-item"><a href="#code" class="item-link">Code</a></li>
           <li class="nav-item"><a href="#lang" class="item-link">Languages</a></li>
         </ul>
       </nav>
@@ -69,6 +70,20 @@
         </li>
       </ul>
     </section>
+
+    <section class="section" id="code">
+      <h2 class="section-title">Code</h2>
+      <code class="code">
+func (u *UserRepository) ActivateUserById(ctx context.Context, userId int) (err error){<br>
+  _, err = u.db.Exec(ctx, ActivateById, userId, time.Now())<br>
+  if err != nil {<br>
+    return errors.Wrapf(err, "unable to set user %d as active", userId)<br>
+    }<br>
+  return err<br>
+  }
+</code>
+    </section>
+
     <section class="section" id="lang">
       <h2 class="section-title">Languages</h2>
       <ul class="text-list">
